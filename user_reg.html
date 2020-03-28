@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Registro de usuario</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--Esta seccion de action es incompleta-->
+	<!--Falta determinar dónde se guardaran los archivos y los registros del backend-->
+	<form action="" class="login">
+        <h3 class="text-center">Registrar usuario</h3>
+        <div class="form-group">
+			<label for="nombre">Nombre y apellidos</label>
+			<input type="text" class="form-control border-success" name="nombre" id="nombre" placeholder="Ingresar nombres y apellidos completos" required>
+        </div>
+        <div class="form-group">
+			<label for="cedula">Cédula</label>
+			<input type="text" class="form-control border-success" name="cedula" id="cedula" placeholder="Ingresar cédula o código de identificación" required>
+        </div>
+        <div class="form-group">
+			<label for="correo">Correo electrónico</label>
+			<input type="email" class="form-control border-success" name="correo" id="correo" placeholder="Ingresar correo electrónico" required>
+		</div>
+		<div class="form-group">
+			<label for="nombre_usuario">Nombre de usuario</label>
+			<input type="text" class="form-control border-success" name="nombre_usuario" id="nombre_usuario" placeholder="Ingresar nombre de usuario" required>
+		</div>
+		<div class="form-group">
+			<label for="clave">Contraseña</label>
+			<input type="password" class="form-control border-success" name="clave" id="clave" placeholder="Ingresar contraseña" required>
+        </div>
+        <div class="form-group">
+            <label for="tipo_usuario">Tipo de usuario</label>
+			<select type="text" class="form-control border-success" name="tipo_usuario" id="tipo_usuario" required>
+                <option disabled selected>Seleccione el tipo de usuario</option>
+                <option>Operario</option>
+                <option>Administrador - Supervisor</option>
+            </select>
+		</div>
+		<p class="text-center">
+			<button class="btn btn-success btn-block">Registrar usuario</button>
+        </p>
+        <p class="text-center"><a href="index.html">Ya tengo una cuenta de usuario</a></p>
+	</form>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
