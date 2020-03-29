@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Registro de servicio al cliente</title>
+    <link rel="stylesheet" href="css/estilos.css">
+	<script src="js/datos_servicio.js"></script>
+</head>
+<body>
+    <!--Esta seccion de action es incompleta-->
+	<!--Falta determinar dónde se guardaran los archivos y los registros del backend-->
+	<form action="javascript: crearDatos()" class="login" name="client_form">
+        <h3 class="text-center text-success">Cliente e informe de servicio</h3>
+        <div class="form-group">
+			<label for="nombre_cliente">Nombre y apellidos</label>
+			<input type="text" class="form-control border-success" name="nombre_cliente" id="nombre_cliente" placeholder="Ingresar nombres y apellidos completos" required>
+        </div>
+        <div class="form-group">
+			<label for="cedula">Cédula</label>
+			<input type="number" class="form-control border-success" name="cedula" id="cedula" placeholder="Ingresar cédula" required>
+        </div>
+        <div class="form-group">
+			<label for="direccion">Domicilio</label>
+			<input type="text" class="form-control border-success" name="direccion" id="direccion" placeholder="Ingresar dirección completa" required>
+		</div>
+		<div class="form-group">
+			<label for="telefono">Teléfono / Celular</label>
+			<input type="number" class="form-control border-success" name="telefono" id="telefono" placeholder="Ingresar número de contacto" required>
+		</div>
+		<div class="form-group">
+			<label for="servicio">Descripción del servicio</label>
+			<input type="text" class="form-control border-success" name="servicio" id="servicio" placeholder="Describir el servicio prestado" required>
+		</div>
+		<p class="text-center">
+			<button class="btn btn-success btn-block">Guardar datos del servicio</button>
+        </p>
+	</form>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
