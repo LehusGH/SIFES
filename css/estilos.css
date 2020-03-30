@@ -22,3 +22,10 @@ html{
 		width: 90%;
 	}
 }
+
+hr.linea {
+	border: 2px solid green;
+	border-radius: 5px;
+	margin-left: 4px;
+	margin-right: 4px; 
+}
