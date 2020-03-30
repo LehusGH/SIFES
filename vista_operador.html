@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Operario - visitas programadas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/fecha.js"></script>
+</head>
+<body>
+    <div class="text-center">
+        <p>
+            <br>
+            <br>
+            <img src="images/avatar.png" width="100" height="100">
+            <h4 class="text-success">Empleado</h4>
+            <h4>Nombre del empleado</h4>
+        </p>
+    </div>
+
+    <br><br><br>
+
+    <div class="card text-center">
+        <div class="card-body bg-success">
+            <br>
+            <script>
+                n =  new Date();
+                //Año
+                y = n.getFullYear();
+                //Mes
+                m = n.getMonth() + 1;
+                //Día
+                d = n.getDate();
+                fecha = (d + "/" + m + "/" + y);
+                document.write('<h4 class="text-success">' + fecha + '</h4>');
+            </script>
+            <a class="btn btn-success btn-sm" href="client_form.html">Generar datos de visita</a>
+            <br>
+            <br>
+        </div>
+      </div>
+    
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
